@@ -1,0 +1,133 @@
+body{
+    font-size: large;
+}
+h1{
+    text-align: center;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row{
+    display:flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: row;
+
+
+    }
+    header{
+        background-color: orangered;
+        width: 100%;
+        height:60px;
+    }
+    footer{
+        background-color: mediumorchid;
+        width: 100%;
+        height:60px;
+    }
+.top{
+    position: relative;
+    background-color: cyan;
+    width: 50%;
+    height: 400px; 
+    flex-grow: 4;
+    order: 2;
+}
+.asideleft{
+    background-color: green;
+    position: relative;
+    width:25%;
+    height: 400px;
+    flex-grow: 1;
+    order: -1;
+}
+.asideright{
+    background-color: hotpink;
+    position: relative;
+    width: 25%;
+    height:400px;
+    flex-grow: 1;
+    order:3;
+}
+@media screen and (min-width:768px) and (max-width:992px){
+*{
+    font-size: 30px;
+    color: white;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.top{
+    position: relative;
+    background-color: cyan;
+    width: 70%;
+    height: 300px; 
+    flex-grow: 4;
+    order: 0;
+}
+.asideleft{
+    background-color: green;
+    position: relative;
+    width:20%;
+    height: 300px;
+    flex-grow: 1;
+    order: 3;
+    
+
+}
+.asideright{
+    background-color: hotpink;
+    position: relative;
+    width: 30%;
+    height:300px;
+    flex-grow: 1;
+    order:2;
+}
+}
+@media screen and (max-width:768px) {
+    *{
+        font-size: 30px;
+        color: white;
+    }
+.row{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.top{
+    position: relative;
+    background-color: cyan;
+    width: 100%;
+    height: 300px; 
+    flex-grow: 4;
+    order: 1;
+}
+.asideleft{
+    background-color: green;
+    position: relative;
+    width:100%;
+    height: 300px;
+    flex-grow: 1;
+    order: 2;
+}
+.asideright{
+    background-color: hotpink;
+    position: relative;
+    width: 100%;
+    height:300px;
+    flex-grow: 1;
+    order:3;
+}
+}
+
+
